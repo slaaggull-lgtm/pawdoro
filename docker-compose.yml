@@ -1,0 +1,21 @@
+version: "3.8"
+
+# Local PostgreSQL instance for Pawdoro backend development.
+# Start with: docker compose up -d
+# Matches the default values in src/main/resources/application.properties.
+services:
+  postgres:
+    image: postgres:16
+    container_name: pawdoro-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: pawdoro
+      POSTGRES_USER: pawdoro
+      POSTGRES_PASSWORD: pawdoro
+    ports:
+      - "5432:5432"
+    volumes:
+      - pawdoro_pgdata:/var/lib/postgresql/data
+
+volumes:
+  pawdoro_pgdata:

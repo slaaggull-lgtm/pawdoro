@@ -1,0 +1,3 @@
+com/pawdoro/backend/PawdoroBackendApplication.class
+com/pawdoro/backend/dto/StatusResponse.class
+com/pawdoro/backend/controller/PingController.class
