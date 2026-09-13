@@ -1,13 +1,34 @@
+<div align="center">
+
 # 🐾 Pawdoro
 
-**Odaklanmayı önceliklendiren, oyunlaştırılmış bir çalışma arkadaşı uygulaması — Pomodoro seansları, bir Study Buddy ve sıcak bir sanal kütüphane; 5 kişilik ekip ve AI destekli bir iş akışıyla geliştiriliyor.**
+### Birlikte çalış, daha iyi odaklan.
 
-![Durum](https://img.shields.io/badge/durum-geli%C5%9Ftirme%20a%C5%9Famas%C4%B1nda-yellow)
-![Backend](https://img.shields.io/badge/backend-Spring%20Boot%203-6DB33F?logo=springboot&logoColor=white)
-![Veritabanı](https://img.shields.io/badge/veritaban%C4%B1-PostgreSQL%2016-336791?logo=postgresql&logoColor=white)
-![Android](https://img.shields.io/badge/android-Kotlin%20%2F%20Jetpack%20Compose-3DDC84?logo=android&logoColor=white)
-![Java](https://img.shields.io/badge/Java-21-orange?logo=openjdk&logoColor=white)
-![Lisans](https://img.shields.io/badge/lisans-yay%C4%B1nlanmad%C4%B1-lightgrey)
+*Odaklanmayı önceliklendiren, oyunlaştırılmış bir çalışma arkadaşı uygulaması — Pomodoro seansları, bir Study Buddy ve sıcak bir sanal kütüphane; 5 kişilik ekip ve AI destekli bir iş akışıyla geliştiriliyor.*
+
+[![Durum](https://img.shields.io/badge/durum-geli%C5%9Ftirme%20a%C5%9Famas%C4%B1nda-orange?style=flat-square)](#-proje-durumu)
+[![Hafta](https://img.shields.io/badge/roadmap-1.%20hafta%20%2F%2016-blueviolet?style=flat-square)](#️-16-haftalık-roadmap)
+[![Ekip](https://img.shields.io/badge/ekip-5%20ki%C5%9Fi-blue?style=flat-square)](#-ekip-rolleri)
+
+
+<br/>
+
+<img src="https://skillicons.dev/icons?i=java,spring,postgres,kotlin,androidstudio,figma,git,github" alt="teknoloji ikonları" />
+
+</div>
+
+---
+
+## 📋 İçindekiler
+
+- [📖 Pawdoro Nedir?](#-pawdoro-nedir)
+- [✨ Özellik Özeti](#-özellik-özeti)
+- [🚧 Proje Durumu](#-proje-durumu)
+- [🏗️ Teknoloji ve Mimari](#️-teknoloji-ve-mimari)
+- [📁 Depo Yapısı](#-depo-yapısı-backend-mevcut-durum)
+- [🚀 Başlarken](#-başlarken-backend)
+- [👥 Ekip Rolleri](#-ekip-rolleri)
+- [🗺️ 16 Haftalık Roadmap](#️-16-haftalık-roadmap)
 
 ---
 
@@ -15,97 +36,144 @@
 
 Pawdoro, çalışırken kendini yalnız ve mekanik hissetmek istemeyen öğrenciler için tasarlanmış bir mobil çalışma/verimlilik uygulamasıdır. Klasik bir **Pomodoro sayacını**, kişiselleştirilebilir bir **insan avatarı** ve seçilebilir bir hayvan **Study Buddy** (kedi, tavşan, tilki, panda, koala...) ile birleştirir; ilerlemeyi bir **XP / Level / Streak** sistemiyle ödüllendirir ve kullanıcıların arkadaşlarıyla birlikte, dikkat dağıtan bir sohbet penceresi olmadan çalışabileceği sakin, kitaplık atmosferli **sanal çalışma odaları** sunar.
 
-**Hedef kullanıcı:** günlük çalışma alışkanlığından uzun soluklu sınav hazırlığına (örn. üniversite sınavı) kadar geniş bir yelpazede, nazik bir sorumluluk hissi, yalnız çalışırken bile bir arkadaşlık hissi ve zaman içinde görünür/ödüllendirici bir ilerleme isteyen öğrenciler.
+> 🎯 **Hedef kullanıcı** — günlük çalışma alışkanlığından uzun soluklu sınav hazırlığına (örn. üniversite sınavı) kadar geniş bir yelpazede, nazik bir sorumluluk hissi, yalnız çalışırken bile bir arkadaşlık hissi ve zaman içinde görünür/ödüllendirici bir ilerleme isteyen öğrenciler.
 
-**Tasarım felsefesi:** premium ve minimalist bir **pastel** görsel kimlik, loş/gece kütüphane atmosferi, yumuşak geçişler ve uzun çalışma seansları için pil dostu statik/OLED mod — çalışmayı bölmeyecek kadar sakin bir deneyim.
+> 🎨 **Tasarım felsefesi** — premium ve minimalist bir **pastel** görsel kimlik, loş/gece kütüphane atmosferi, yumuşak geçişler ve uzun çalışma seansları için pil dostu statik/OLED mod — çalışmayı bölmeyecek kadar sakin bir deneyim.
 
-> Bu README, ürünün **tüm vizyonunu** anlatır. Aşağıdaki [Proje Durumu](#-proje-durumu) bölümü, bugün gerçekten neyin tamamlandığını ve neyin planlandığını net şekilde belirtir.
+> ℹ️ Bu README, ürünün **tüm vizyonunu** anlatır. [Proje Durumu](#-proje-durumu) bölümü, bugün gerçekten neyin tamamlandığını net şekilde belirtir.
 
 ---
 
 ## ✨ Özellik Özeti
 
-### 🎨 Görsel Kimlik ve Pil Optimizasyonu
+<details>
+<summary><b>🎨 Görsel Kimlik ve Pil Optimizasyonu</b></summary>
+<br/>
+
 - Gözü yormayan, mat ve dinlendirici Minimalist Pastel tasarım dili
 - Yumuşak geçişli açık/koyu tema desteği
 - Uzun ekran açık kalma sürelerinde pil tüketimini azaltan OLED/statik mod
+</details>
 
-### 🧑‍🎓🐱 Study Buddy ve İnsan Avatarı
+<details>
+<summary><b>🧑‍🎓🐱 Study Buddy ve İnsan Avatarı</b></summary>
+<br/>
+
 - Kullanıcıyı temsil eden, kişiselleştirilebilir insan avatarı
 - Seçilebilir hayvan Study Buddy (kedi, tavşan, tilki, panda, koala vb.)
 - Çalışma durumuna göre değişen animasyonlar ve mimikler (birlikte not alma, dinlenme, kahve içme)
+</details>
 
-### ⏱️ Pomodoro, Sıkı Odaklanma Modu ve Çevrimdışı Çalışma
+<details>
+<summary><b>⏱️ Pomodoro, Sıkı Odaklanma Modu ve Çevrimdışı Çalışma</b></summary>
+<br/>
+
 - Özelleştirilebilir sayaç (25 / 40 / 50 / 60 dakika veya serbest süre)
 - **Strict Focus Mode**: seans sırasında uygulamadan çıkılırsa oturum "Interrupted" olarak işaretlenir
 - Esnek mola mantığı — bir sonraki seans otomatik başlamaz
 - **Offline-first**: Pomodoro internetsiz çalışır, bağlantı geldiğinde veriler senkronize olur
+</details>
 
-### 📚 Ders ve Sınav Sayacı
+<details>
+<summary><b>📚 Ders ve Sınav Sayacı</b></summary>
+<br/>
+
 - Ders ekleme/düzenleme/silme, derslere özel renk ve ikon
 - Ders bazlı toplam çalışma süresi ve son çalışma zamanı
 - Yaklaşan sınavlar için canlı geri sayım kartı ("Sınava 120 gün kaldı")
+</details>
 
-### 🎯 Hedef ve Günlük Ödül Sistemi
+<details>
+<summary><b>🎯 Hedef ve Günlük Ödül Sistemi</b></summary>
+<br/>
+
 - Günlük/haftalık hedef belirleme ve ilerleme çubuğu
 - Hedefini tamamlayan kullanıcılara günlük **Gizemli Kutu** ödülü
+</details>
 
-### ⭐ Streak Sistemi
+<details>
+<summary><b>⭐ Streak Sistemi</b></summary>
+<br/>
+
 - Duolingo tarzı günlük çalışma serisi, klasik ateş yerine özgün "takımyıldız/sihirli yıldız" ikonu
 - **Streak Freeze** koruması ve streak bazlı rozetler
+</details>
 
-### ✨ XP ve Seviye Sistemi
+<details>
+<summary><b>✨ XP ve Seviye Sistemi</b></summary>
+<br/>
+
 - Çalışma süresine göre XP kazanımı, seviye ilerleme çubuğu ve seviye atlama animasyonu
 - Seviyeye göre açılan yeni ödüller
+</details>
 
-### 🛍️ Rozet, Mağaza ve Sezonluk Aksesuarlar
+<details>
+<summary><b>🛍️ Rozet, Mağaza ve Sezonluk Aksesuarlar</b></summary>
+<br/>
+
 - Başarı, streak ve ders bazlı özel rozetler
 - Avatar, Study Buddy ve masa için kozmetik mağazası
 - Yılbaşı, Cadılar Bayramı, Bahar gibi sınırlı süreli sezonluk koleksiyonlar
+</details>
 
-### 🪑 Çalışma Odaları ve Canlı Etkileşim
+<details>
+<summary><b>🪑 Çalışma Odaları ve Canlı Etkileşim</b></summary>
+<br/>
+
 - Kod/link ile katılınan özel odalar (5 kişiye kadar) ve genel kütüphane odası (15 kişiye kadar)
 - Gece/gündüz/loş kütüphane atmosferi, masa lambası aydınlatması
 - Lo-fi müzik, yağmur sesi ve kütüphane ortam sesi seçenekleri
+</details>
 
-### 👥 Sosyal Özellikler
+<details>
+<summary><b>👥 Sosyal Özellikler</b></summary>
+<br/>
+
 - **Buddy Call**: tek tıkla gönderilen hazır mesaj baloncukları ("Masaya geçiyorum, sen de gel!")
 - **Silent Presence**: bildirim göndermeyen mikro etkileşimler — Sessiz Alkış 👏, Omuz Dürt 🤜🤛, Kahve Ismarla ☕
 - Arkadaş ekleme/kabul/silme ve yalnızca arkadaş grubuna özel haftalık sıralama (global sıralama yok)
+</details>
 
-### 📊 İstatistik ve AI Analiz
+<details>
+<summary><b>📊 İstatistik ve AI Analiz</b></summary>
+<br/>
+
 - Günlük/haftalık çalışma grafikleri, toplam süre, en çok çalışılan ders, tamamlanan Pomodoro sayısı
 - **AI Study Insights**: kişiselleştirilmiş verim analizi (örn. "En yüksek odağı 09:00-11:00 arasında yakalıyorsun")
 - Tam çalışma geçmişi kaydı
+</details>
 
-### 👤 Profil, Bildirimler, Onboarding ve Ayarlar
+<details>
+<summary><b>👤 Profil, Bildirimler, Onboarding ve Ayarlar</b></summary>
+<br/>
+
 - Avatar, Buddy, level, XP, streak, sınav geri sayımı ve istatistik özetini içeren profil
 - Pomodoro tamamlanma, günlük hedef, streak hatırlatma ve Buddy Call bildirimleri
 - Onboarding akışı: karşılama, avatar/Buddy oluşturma, hedef belirleme, ders ekleme
 - Hesap, odaklanma, görünüm, ses ve gizlilik ayarları
+</details>
 
-### 🔒 Güvenlik ve Hile Önleme
+<details>
+<summary><b>🔒 Güvenlik ve Hile Önleme</b></summary>
+<br/>
+
 - Tek cihazda oturum kontrolü (paralel sayaç başlatma engeli)
 - İnsani olmayan, aralıksız çalışma sürelerinin otomatik tespiti
 - Arkadaş sıralamasının adil kalması için süre doğrulama kontrolleri
 - Özel odalar için davet kodu/link koruması
 - Kullanıcı bilgilerinin ve çalışma geçmişinin güvenli saklanması
+</details>
 
 ---
 
 ## 🚧 Proje Durumu
 
-Pawdoro, 5 kişilik bir ekip tarafından, her üyenin kendi alanında AI araçlarıyla kod, tasarım ve içerik ürettiği **16 haftalık bir roadmap** üzerinden geliştiriliyor.
+**Roadmap ilerlemesi:** `🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜` **1. Hafta / 16**
 
-### ✅ Tamamlananlar (1. Hafta — Backend İskeleti)
-- Spring Boot 3 + PostgreSQL proje iskeleti (`pawdoro-backend`)
-- Ortam değişkenleriyle yapılandırılan, çalışır durumdaki uygulama
-- Sağlık/durum kontrol uçları (`/actuator/health`, `/api/v1/ping`)
-- `docker-compose` ile yerel PostgreSQL kurulumu
-- Temel test altyapısı (`PingControllerTest`)
-
-### 🔜 Planlanan Özellikler
-Yukarıda anlatılan diğer her şey — domain entity'leri, JWT ile kimlik doğrulama, Android ekranları, avatar/Buddy sistemi, Pomodoro mantığı, ders ve sınav sistemi, hedef/gizemli kutu, streak, XP/level, mağaza, çalışma odaları, sosyal özellikler, istatistikler, AI Insights, bildirimler, onboarding, ayarlar ve tam hile önleme sistemi — **planlanmış** durumdadır ve aşağıdaki roadmap'e göre kademeli olarak geliştirilecektir. Bunların hiçbiri şu an kod tabanında bulunmamaktadır.
+| | |
+|---|---|
+| ✅ **Tamamlananlar — 1. Hafta (Backend iskeleti)** | 🔜 **Planlanan Özellikler** |
+| • Spring Boot 3 + PostgreSQL proje iskeleti (`pawdoro-backend`)<br>• Ortam değişkenleriyle yapılandırılan, çalışır durumdaki uygulama<br>• Sağlık/durum kontrol uçları (`/actuator/health`, `/api/v1/ping`)<br>• `docker-compose` ile yerel PostgreSQL kurulumu<br>• Temel test altyapısı (`PingControllerTest`) | Domain entity'leri, JWT ile kimlik doğrulama, Android ekranları, avatar/Buddy sistemi, Pomodoro mantığı, ders ve sınav sistemi, hedef/gizemli kutu, streak, XP/level, mağaza, çalışma odaları, sosyal özellikler, istatistikler, AI Insights, bildirimler, onboarding, ayarlar ve tam hile önleme sistemi. **Bunların hiçbiri şu an kod tabanında bulunmuyor** — aşağıdaki [roadmap](#️-16-haftalık-roadmap)'e bakınız. |
 
 ---
 
@@ -113,21 +181,21 @@ Yukarıda anlatılan diğer her şey — domain entity'leri, JWT ile kimlik doğ
 
 | Katman | Teknoloji |
 |---|---|
-| Backend | Java 21, Spring Boot 3 (Web, Data JPA, Validation, Actuator, Security planlanıyor) |
-| Veritabanı | PostgreSQL 16+ |
-| Mobil (Android) | Kotlin, Jetpack Compose, Retrofit, Room (offline önbellek) |
-| Tasarım | Figma, Illustrator/Inkscape/Canva |
-| AI ile üretilen görseller | Midjourney / DALL·E 3 / Ideogram / Recraft.ai |
-| Gerçek zamanlı (planlanan) | WebSocket (çalışma odaları, canlı durum) |
-| Kimlik doğrulama (planlanan) | Spring Security + JWT |
-| Araçlar | IntelliJ IDEA, Android Studio, Postman/Bruno, Git & GitHub |
+| 🖥️ Backend | Java 21, Spring Boot 3 (Web, Data JPA, Validation, Actuator, Security planlanıyor) |
+| 🗄️ Veritabanı | PostgreSQL 16+ |
+| 📱 Mobil (Android) | Kotlin, Jetpack Compose, Retrofit, Room (offline önbellek) |
+| 🎨 Tasarım | Figma, Illustrator/Inkscape/Canva |
+| 🖼️ AI ile üretilen görseller | Midjourney / DALL·E 3 / Ideogram / Recraft.ai |
+| 🔌 Gerçek zamanlı (planlanan) | WebSocket (çalışma odaları, canlı durum) |
+| 🔐 Kimlik doğrulama (planlanan) | Spring Security + JWT |
+| 🛠️ Araçlar | IntelliJ IDEA, Android Studio, Postman/Bruno, Git & GitHub |
 
 ## 📁 Depo Yapısı (backend, mevcut durum)
 
 ```
 pawdoro-backend/
-├── docker-compose.yml              # Geliştirme için yerel PostgreSQL
-├── pom.xml                         # Maven yapılandırması
+├── docker-compose.yml               # Geliştirme için yerel PostgreSQL
+├── pom.xml                          # Maven yapılandırması
 ├── src/
 │   ├── main/
 │   │   ├── java/com/pawdoro/backend/
@@ -142,6 +210,8 @@ pawdoro-backend/
 ├── README.md
 └── README_TR.md
 ```
+
+---
 
 ## 🚀 Başlarken (Backend)
 
@@ -161,6 +231,8 @@ curl http://localhost:8080/actuator/health
 
 Bağlantı ayarları `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `SERVER_PORT` ortam değişkenleriyle değiştirilebilir.
 
+---
+
 ## 👥 Ekip Rolleri
 
 | Rol | Sorumluluk |
@@ -172,6 +244,8 @@ Bağlantı ayarları `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `SERVER_PORT` ortam
 | 📅 QA, Analytics & Flow Yöneticisi | Kullanıcı akışları, AI Insights prompt/algoritmaları, test senaryoları, hata takibi |
 
 Her rol, kendi alanındaki kodu, tasarımı ve içeriği üretmek/geliştirmek için AI araçlarıyla (Claude, ChatGPT, Cursor, Midjourney vb.) çalışır ve çıktıyı ortak projeye entegre eder.
+
+---
 
 ## 🗺️ 16 Haftalık Roadmap
 
@@ -196,4 +270,9 @@ Her rol, kendi alanındaki kodu, tasarımı ve içeriği üretmek/geliştirmek i
 
 ---
 
+<div align="center">
+
 *Bu doküman, ekibin planlama materyallerindeki ürün vizyonunu yansıtır. Özellik durumu, geliştirme ilerledikçe güncel tutulur — bugün gerçekten teslim edilenler için [Proje Durumu](#-proje-durumu) bölümüne bakın.*
+
+</div>
+
